@@ -1,0 +1,20 @@
+.main {
+  min-height: 100vh;
+}
+
+.gridContainer {
+  padding: 10ox;
+  /* padding-top: 30px; */
+}
+
+.tableContainer {
+  padding: 10px;
+  height: 500px;
+  width: 100%;
+}
+
+.sideTableContainer {
+  padding-top: 27px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
