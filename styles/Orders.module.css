@@ -1,0 +1,30 @@
+.main {
+  min-height: 100vh;
+}
+
+.gridContainer {
+  /* padding-top: 30px; */
+  padding: 30px;
+}
+
+.tableContainer {
+  width: 100%;
+}
+
+.sideTableContainer {
+  padding-top: 27px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tableMenu {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tableMenuButton {
+  margin-left: 5px;
+  /* margin-right: 5px; */
+  min-width: 100px;
+}

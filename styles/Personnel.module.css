@@ -3,14 +3,14 @@
 }
 
 .gridContainer {
-  padding: 10ox;
+  padding: 10px;
   /* padding-top: 30px; */
 }
 
 .tableContainer {
   padding: 10px;
   height: 500px;
-  width: 100%;
+  width: 1300px;
 }
 
 .sideTableContainer {

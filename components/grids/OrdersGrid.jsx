@@ -1,19 +1,16 @@
 import React from "react";
 import { DataGrid } from "@mui/x-data-grid";
-import styles from "../../styles/Personnel.module.css";
+import styles from "../../styles/Orders.module.css";
 import { Box, Divider, Typography } from "@mui/material";
-import { personnelColumns } from "./columns";
+import { ordersColumns } from "./columns";
 
-const PersonnelGrid = ({ data }) => {
+const OrdersGrid = ({ data }) => {
   const getColumnData = (e) => {
     console.log(e.row);
   };
   return (
     <div className={styles.tableContainer}>
-      <Divider textAlign="left" style={{ paddingBottom: "5px" }}>
-        <Typography variant="h5">Personnel Dashboard</Typography>
-      </Divider>
-      {data.length > 0 ? (
+      {ordersColumns.length > 0 ? (
         <Box
           sx={{
             height: 454,
@@ -36,7 +33,7 @@ const PersonnelGrid = ({ data }) => {
             disableColumnMenu
             density="compact"
             autoPageSize
-            columns={personnelColumns}
+            columns={ordersColumns}
             onRowClick={getColumnData}
           />
         </Box>
@@ -46,11 +43,11 @@ const PersonnelGrid = ({ data }) => {
           error
           disableColumnMenu
           autoPageSize
-          columns={personnelColumns}
+          columns={ordersColumns}
         />
       )}
     </div>
   );
 };
 
-export default PersonnelGrid;
+export default OrdersGrid;
